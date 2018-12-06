@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="leftEdgeSwipeOffset" format="dimension" />
+        <attr name="rightEdgeSwipeOffset" format="dimension" />
+        <attr name="topEdgeSwipeOffset" format="dimension" />
+        <attr name="bottomEdgeSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+        <attr name="clickToClose" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="fontStyle">
+    <attr name="fontName" format="string">
+        <enum name="normal" value="0" />
+        <enum name="bold" value="1" />
+        <enum name="light" value="2" />
+        <enum name="extra_bold" value="3" />
+    </attr>
+        <attr name="mandatory" format="boolean"/>
+    </declare-styleable>
+
+    <!--<declare-styleable name="CustomButton">
+        <attr name="font" format="string">
+            <flag name="normal" value="@string/font_normal" />
+            <flag name="bold" value="@string/font_bold" />
+            <flag name="light" value="@string/font_light" />
+            <flag name="extra_bold" value="@string/font_extra_bold" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="font" format="string">
+            <flag name="normal" value="@string/font_normal" />
+            <flag name="bold" value="@string/font_bold" />
+            <flag name="light" value="@string/font_light" />
+            <flag name="extra_bold" value="@string/font_extra_bold" />
+        </attr>
+    </declare-styleable>-->
+</resources>

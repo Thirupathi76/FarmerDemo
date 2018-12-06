@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<item android:state_pressed="true" >
+    <shape android:shape="rectangle"  xmlns:android="http://schemas.android.com/apk/res/android"  >
+        <corners android:radius="30dip" />
+
+        <solid android:color="@color/orange"/>
+
+    </shape>
+</item>
+<item android:state_focused="true">
+    <shape android:shape="rectangle"  xmlns:android="http://schemas.android.com/apk/res/android"  >
+        <corners android:radius="30dip" />
+
+        <solid android:color="@color/colorPrimary"/>
+    </shape>
+</item>
+<item >
+    <shape android:shape="rectangle"  xmlns:android="http://schemas.android.com/apk/res/android"   >
+        <corners android:radius="30dip" />
+
+        <solid android:color="@color/colorPrimary"/>
+
+    </shape>
+</item>
+</selector>
+<!--
+<gradient android:angle="-90" android:startColor="@color/orange" android:endColor="@color/orange"  />
+<gradient android:angle="-90" android:startColor="@color/blue" android:endColor="@color/blue" />-->
+   <!-- <?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+&lt;!&ndash; Button Focused&ndash;&gt;
+&lt;!&ndash; Button Focused Pressed&ndash;&gt;
+&lt;!&ndash; Button Pressed&ndash;&gt;
+&lt;!&ndash; Button Default Image&ndash;&gt;
+<item >
+    <shape android:shape="rectangle"  >
+        <corners android:radius="12dip" />
+        <stroke android:width="1dip" android:color="@color/blue" />
+        <solid android:color="@color/blue"></solid>
+    </shape>
+</item>
+
+&lt;!&ndash;  <item android:drawable="@color/dark_grey" />&ndash;&gt;
+<item android:state_pressed="false" android:state_focused="true" android:drawable="@color/orange" />
+<item android:state_pressed="true" android:state_focused="true" android:drawable="@color/orange" />
+<item android:state_pressed="true" android:state_focused="false" android:drawable="@color/orange" />
+<item android:drawable="@color/blue" />
+
+</selector>-->

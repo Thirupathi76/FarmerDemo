@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/farmer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corner_button"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:text="Farmer"/>
+
+        <Button
+            android:id="@+id/vfarmer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corner_button"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:text="VFarmer"/>
+
+        <Button
+            android:id="@+id/worker"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corner_button"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:text="Workers"/>
+    </LinearLayout>
+
+</LinearLayout>

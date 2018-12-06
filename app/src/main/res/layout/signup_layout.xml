@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    style="@style/MatchWrap"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/reg_form"
+        style="@style/MatchWrap"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_20">
+
+        <com.demo.farmerdemo.views.TextViewHeader
+            style="@style/HeaderTextStyle"
+            android:text="Sign up form"
+            android:textSize="@dimen/font_18" />
+
+        <EditText
+            android:id="@+id/reg_first_name"
+            style="@style/RegistrationFieldsStyle"
+            android:digits="@string/digits_char"
+            android:hint="@string/first_name"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/reg_last_name"
+            style="@style/RegistrationFieldsStyle"
+            android:digits="@string/digits_char"
+            android:hint="@string/last_name"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/reg_cellphone_number"
+            style="@style/RegistrationFieldsStyle"
+            android:digits="1234567890"
+            android:hint="@string/cellphone_number"
+            android:inputType="phone"
+            android:longClickable="false"
+            android:maxLength="14" />
+
+        <EditText
+            android:id="@+id/reg_email_address"
+            style="@style/RegistrationFieldsStyle"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/reg_confirm_email_address"
+            style="@style/RegistrationFieldsStyle"
+            android:hint="@string/confirm_email_address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/reg_password"
+            style="@style/RegistrationFieldsStyle"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+
+        <EditText
+            android:id="@+id/reg_confirm_password"
+            style="@style/RegistrationFieldsStyle"
+            android:hint="@string/confirm_password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+
+
+
+
+        <Button
+            android:id="@+id/reg_sign_up"
+            style="@style/ButtonStyle"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text="@string/sign_up" />
+
+        <TextView
+            android:id="@+id/reg_have_account"
+            style="@style/TextStyle"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/already_have_an_account"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+</ScrollView>

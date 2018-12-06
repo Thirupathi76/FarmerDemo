@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Farmer</string>
+
+    <string name="please_specify">Please Specify</string>
+    <string name="noimage">noimage</string>
+    <string name="username">User name</string>
+    <string name="password">Password</string>
+    <string name="show_password">Show Password</string>
+    <string name="submit">Submit</string>
+    <string name="capture_photo">capture photo</string>
+    <string name="form_status">FORM STATUS</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="form_ramp">Garage Form</string>
+    <string name="garrage_name">Name of the garage</string>
+    <string name="address">Address</string>
+    <string name="comp_name">Company Name</string>
+    <string name="branch">Branch</string>
+    <string name="dept">Department</string>
+    <string name="designation">Designation</string>
+    <string name="email">Email</string>
+    <string name="title_activity_nav_profile">NavProfileActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_account">Account</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_orders">Orders</string>
+    <string name="menu_reminders">Reminder</string>
+
+    <string name="digits_address">, ,-,,,,0,1,2,3,4,5,6,7,8,9,/,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM</string>
+    <string name="digits_char">, ,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM</string>
+
+</resources>
