@@ -41,4 +41,90 @@
     <dimen name="dimen_30">30dp</dimen>
     <dimen name="switch_width">30dp</dimen>
     <dimen name="switch_height">25dp</dimen>
+
+    <dimen name="image_width">100dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="expanded_toolbar_height">200dp</dimen>
+    <dimen name="textsize_large">20sp</dimen>
+    <dimen name="textsize_medium">18sp</dimen>
+    <dimen name="textsize_xlarge">30sp</dimen>
+    <dimen name="spacing_small">12dp</dimen>
+    <dimen name="spacing_xsmall">8dp</dimen>
+    <dimen name="spacing_xxsmall">4dp</dimen>
+    <dimen name="border_width">2dp</dimen>
+
+
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="rounded_corner">3dp</dimen>
+    <dimen name="text_title">15sp</dimen>
+
+    <dimen name="text_content">18sp</dimen>
+    <dimen name="large_text_content">15sp</dimen>
+    <dimen name="x_large_text_content">16sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_small">18sp</dimen>
+    <dimen name="text_small_location">14sp</dimen>
+    <dimen name="text_x_small">10sp</dimen>
+
+    <dimen name="normal_margin">5dp</dimen>
+    <dimen name="small_margin">3dp</dimen>
+    <dimen name="large_margin">10dp</dimen>
+    <dimen name="x_large_margin">20dp</dimen>
+
+    <dimen name="tablayout_height">45dp</dimen>
+    <dimen name="tab_indicator_height">3dp</dimen>
+
+    <dimen name="arrow_size">20dp</dimen>
+    <dimen name="oval_corner">20dp</dimen>
+    <dimen name="plus_icon">30dp</dimen>
+    <dimen name="card_view_height">80dp</dimen>
+
+    <dimen name="activity_right_margin">10dp</dimen>
+    <dimen name="activity_left_margin">10dp</dimen>
+    <dimen name="icon_width">60dip</dimen>
+    <dimen name="icon_height">60dip</dimen>
+    <dimen name="icon_padding">8dp</dimen>
+    <dimen name="card_height">200dip</dimen>
+    <dimen name="text_size">18sp</dimen>
+
+
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">240dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">18dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+
+    <dimen name="feed_item_margin">10dp</dimen>
+    <dimen name="feed_item_padding_top_bottom">20dp</dimen>
+    <dimen name="feed_item_padding_left_right">15dp</dimen>
+    <dimen name="feed_item_profile_pic">50dp</dimen>
+    <dimen name="feed_item_profile_info_padd">10dp</dimen>
+    <dimen name="feed_item_profile_name">15dp</dimen>
+    <dimen name="feed_item_timestamp">13dp</dimen>
+    <dimen name="feed_item_status_pad_left_right">15dp</dimen>
+    <dimen name="feed_item_status_pad_top">13dp</dimen>
+    <dimen name="feed_item_corner_radius">3dp</dimen>
+    <dimen name="feed_item_border_width">1dp</dimen>
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+
+
+    //
+    <item name="match_parent" format="integer" type="dimen">-1</item>
+    <item name="wrap_content" format="integer" type="dimen">-2</item>
+
+    <dimen name="auth_page_margin">24dp</dimen>
+    <dimen name="folded_size">20sp</dimen>
+    <dimen name="unfolded_size">40sp</dimen>
+    <dimen name="option_size">56dp</dimen>
+    <dimen name="text_padding">16dp</dimen>
+    <dimen name="input_width">220dp</dimen>
+    <dimen name="label_size">20sp</dimen>
+    <dimen name="folded_label_padding">22sp</dimen>
+    <dimen name="logo_size">64dp</dimen>
+    <dimen name="guideline_margin">56dp</dimen>
 </resources>

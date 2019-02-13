@@ -31,7 +31,6 @@ public class VFarmerSignUp extends AppCompatActivity implements View.OnClickList
 
         signup = findViewById(R.id.btn_signup);
 
-
         signup.setOnClickListener(this);
         /*name = findViewById(R.id.et_username);
         mobile = findViewById(R.id.et_mobile);

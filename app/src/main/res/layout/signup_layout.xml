@@ -13,7 +13,7 @@
             style="@style/HeaderTextStyle"
             android:text="Sign up form"
             android:textSize="@dimen/font_18" />
-
+<!--
         <EditText
             android:id="@+id/reg_first_name"
             style="@style/RegistrationFieldsStyle"
@@ -80,6 +80,6 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="@string/already_have_an_account"
-            android:textSize="@dimen/font_16" />
+            android:textSize="@dimen/font_16" />-->
     </LinearLayout>
 </ScrollView>

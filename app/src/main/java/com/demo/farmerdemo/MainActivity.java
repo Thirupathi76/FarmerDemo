@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.farmer).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, FarmerSignUp.class));
+                startActivity(new Intent(MainActivity.this, VFarmerSignUp.class));
             }
         });
 
@@ -30,6 +30,34 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, WorkerSignUp.class));
+            }
+        });
+
+        findViewById(R.id.supplier).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SupplierRegistration.class));
+            }
+        });
+
+        findViewById(R.id.merchant).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MerchantRegistration.class));
+            }
+        });
+
+        findViewById(R.id.logistic).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LogisticRegistration.class));
+            }
+        });
+
+        findViewById(R.id.warehouse).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, WareHouseRegistration.class));
             }
         });
     }

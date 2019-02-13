@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/home_banner_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="@dimen/dimen_12"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_banner_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp" />
+
+        <LinearLayout
+            android:id="@+id/home_banner_pager_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/cat_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_8"
+            android:text="Top Categories"
+            android:textColor="@color/text_green_whatsapp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cat_1"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8" />
+
+        <TextView
+            android:id="@+id/cat_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recyclerViewBody"
+            android:layout_margin="@dimen/dimen_8"
+            android:text="Top Categories"
+            android:visibility="gone"
+            android:textColor="@color/text_green_whatsapp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerBody2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cat_2"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8" />
+
+        <RelativeLayout
+            android:id="@+id/home_banner_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/recyclerBody2"
+            android:layout_margin="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_12"
+            android:visibility="visible">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/home_banner_bottom_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/home_banner_pager_bottom_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

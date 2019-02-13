@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_margin="8dp"
+    android:id="@+id/layout"
+    android:layout_gravity="center_horizontal"
+    android:layout_centerInParent="true"
+    android:padding="8dp">
+
+    <RadioButton
+        android:visibility="gone"
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:text="sdf;lsdkjf l;kkshdfjs;kldjf "
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/select_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+
+        android:textColor="#0c2338"
+        android:background="@drawable/round_stroke"
+        android:text="Telugu"/>
+    </LinearLayout>
+</LinearLayout>

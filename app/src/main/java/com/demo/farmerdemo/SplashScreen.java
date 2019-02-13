@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-
+import com.demo.farmerdemo.slide_login.LoginActivity;
 public class SplashScreen extends AppCompatActivity {
 
     @Override
@@ -15,7 +15,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashScreen.this, FarmerSignUp.class));
+                startActivity(new Intent(SplashScreen.this, LoginActivity.class));
             }
         }, 2000);
 

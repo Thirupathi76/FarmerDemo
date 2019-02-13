@@ -24,7 +24,7 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+
 
     <string name="menu_account">Account</string>
     <string name="menu_home">Home</string>
@@ -33,5 +33,172 @@
 
     <string name="digits_address">, ,-,,,,0,1,2,3,4,5,6,7,8,9,/,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM</string>
     <string name="digits_char">, ,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM</string>
+    <string name="search">Search</string>
+    <string name="address_delivery"> 8-3-228-1290/284 \nJawahar nagar Yousufguda \nHyderabad 500045</string>
+
+    <string-array name="merchant_type">
+        <item>--Select--</item>
+        <item>Retails</item>
+        <item>Malls</item>
+        <item>Whole sale</item>
+        <item>Super marketing</item>
+        <item>Shops</item>
+        <item>Food processing</item>
+    </string-array>
+
+    <string-array name="supplier_type">
+        <item>--Select--</item>
+        <item>Fertilizers and Pesticides</item>
+        <item>Seeds</item>
+        <item>Plantation and Nursery</item>
+
+    </string-array>
+
+
+    <string-array name="spinner_logistic_type">
+        <item>--Select--</item>
+        <item>Cold chain operator</item>
+        <item>Transportation</item>
+
+    </string-array>
+
+
+    <string-array name="warehouse_type">
+        <item>--Select--</item>
+        <item>Cold Storage</item>
+        <item>Go - Down</item>
+
+    </string-array>
+
+    <string-array name="main_grid">
+        <item>Farmer</item>
+        <item>Virtual \nFarmer</item>
+        <item>Advisory \npanel</item>
+        <item>Portfolio \nManager</item>
+        <item>Merchants</item>
+        <item>Suppliers</item>
+        <item>Farm \nworkers</item>
+        <item>Whether \nreports</item>
+        <item>AgriSensex</item>
+        <item>Govt \nschemes</item>
+        <item>more</item>
+        <item>Suppliers</item>
+        <item>Farm \nworkers</item>
+        <item>Whether \nreports</item>
+        <item>Govt \nschemes</item>
+        <item>more</item>
+    </string-array>
+
+    <string-array name="farmer_grid">
+
+        <item>Virtual Farmer</item>
+        <item>Advisory panel</item>
+        <item>Suppliers</item>
+        <item>Merchants</item>
+        <item>Portfolio Manager</item>
+        <item>Market fed Logistics</item>
+        <item>Farm workers</item>
+        <item>Govt schemes</item>
+        <item>AgriSensex</item>
+        <item>Whether reports</item>
+        <item>Soil health card</item>
+        <item>more</item>
+    </string-array>
+
+    <string-array name="advisory_panel_grid">
+
+        <item>Farmer</item>
+        <item>Virtual Farmer</item>
+        <item>Portfolio Manager</item>
+        <item>Research Institute</item>
+        <item>Agri Herti University</item>
+        <item>Links</item>
+        <item>Departments</item>
+        <item>Govt schemes</item>
+        <item>AgriSensex</item>
+        <item>Whether reports</item>
+        <item>Soil health card</item>
+        <item>more</item>
+    </string-array>
+
+    <string-array name="vf_grid">
+        <item>Farmer</item>
+        <item>Virtual Farmer</item>
+        <item>Advisory panel</item>
+        <item>Portfolio Manager</item>
+        <item>Merchants</item>
+        <item>Suppliers</item>
+        <item>Farm workers</item>
+        <item>Whether reports</item>
+        <item>AgriSensex</item>
+        <item>Govt schemes</item>
+        <item>more</item>
+    </string-array>
+
+
+    <string-array name="supplier_grid">
+        <item>Farmer</item>
+        <item>Virtual Farmer</item>
+        <item>Warehous</item>
+        <item>Logistic operation</item>
+    </string-array>
+
+    <string-array name="merchant_grid">
+        <item>Logistics</item>
+        <item>Crop</item>
+        <item>Warehous</item>
+        <item>Logistic operation</item>
+    </string-array>
+
+    <string-array name="logistic_grid">
+        <item>Farmer</item>
+        <item>Virtual Farmer</item>
+        <item>Merchant</item>
+    </string-array>
+
+    <string-array name="warehouse_grid">
+        <item>Go downs</item>
+        <item>Cold Storage</item>
+        <item>Transportation</item>
+    </string-array>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">221623114699507</string>
+
+    <string name="user_exists">User already logged in</string>
+    <string name="sign_in_facebook">Sign in with Facebook</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="logout_text">Sign out</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up_button">Sign up</string>
+    <string name="post_image">Post Image</string>
+
+
+    <string name="sign_up_label">Sign Up</string>
+    <string name="log_in_label">Log In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="confirm_hint">Confirm Password</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Too busy to meet doctor? \n Chat online instead.</string>
+    <string name="slide_2_desc">Get Medicines delivered to your door step</string>
+    <string name="slide_3_desc">Keep your medical history handy</string>
+    <string name="slide_4_desc">Book appointment with the right doctor</string>
+    <string name="slide_3_title">Never miss any reminder</string>
+
+    <string name="youtube_api_key">AIzaSyD80fjoHvDjqh1cxBGgGMxtw6f-EXg-Wp8</string>
+
+    <string name="title_logo">NATIONAL GEOGRAPHIC</string>
+    <string name="btn_skip_intro">Skip Intro</string>
+
+
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
 
 </resources>

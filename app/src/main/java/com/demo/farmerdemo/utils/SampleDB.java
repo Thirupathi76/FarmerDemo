@@ -24,7 +24,6 @@ public class SampleDB extends SQLiteOpenHelper {
     public static final String SAMPLE_TABLE = "user_details_table";
 
 
-
     public SampleDB(Context context) {
         super(context, DB_NAME, null, 1);
 

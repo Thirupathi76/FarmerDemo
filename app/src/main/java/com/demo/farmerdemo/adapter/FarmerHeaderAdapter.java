@@ -10,19 +10,28 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.demo.farmerdemo.R;
+import com.demo.farmerdemo.interfaces.ClickListener;
 
 
 public class FarmerHeaderAdapter extends RecyclerView.Adapter<FarmerHeaderAdapter.MyViewHolder> {
 
-    String[] bike_name = {"Logistics", "info","Market","Supplier","Govt","Authority","Advisory","Orders"};
+    String[] bike_name;// = {"Farmer", "Virtual Farmer", "Suppliers", "Workers", "e-Logistics", "Operators", "Warehouses"};
     Context context;
     String type;
-    int[] images = {R.drawable.screenshot_2,R.drawable.screenshot_3,R.drawable.screenshot_5,R.drawable.screenshot_6,
-            R.drawable.screenshot_7,R.drawable.screenshot_8,R.drawable.screenshot_2,R.drawable.screenshot_3};
+    int[] imagess = {R.drawable.screenshot_3, R.drawable.screenshot_5, R.drawable.screenshot_2, R.drawable.screenshot_6,
+            R.drawable.screenshot_7, R.drawable.screenshot_8, R.drawable.screenshot_2};
 
-    public FarmerHeaderAdapter(Context productActivity, String type) {
+    int[] images = {R.drawable.icon_advisory, R.drawable.icon_farmer,  R.drawable.icon_farmer_at_work,  R.drawable.virtual_farmer,
+            R.drawable.suppliers/*, R.drawable.screenshot_6,  R.drawable.screenshot_7,  R.drawable.screenshot_8,
+            R.drawable.screenshot_9, R.drawable.screenshot_1,  R.drawable.screenshot_2,  R.drawable.screenshot_3,  R.drawable.screenshot_4,
+            R.drawable.screenshot_5, R.drawable.screenshot_6,  R.drawable.screenshot_7*/};
+    private ClickListener clickListener;
+
+    public FarmerHeaderAdapter(Context productActivity, String type, ClickListener clickListener) {
         context = productActivity;
         this.type = type;
+        this.clickListener = clickListener;
+        bike_name = productActivity.getResources().getStringArray(R.array.main_grid);
     }
 
     @NonNull
@@ -32,32 +41,33 @@ public class FarmerHeaderAdapter extends RecyclerView.Adapter<FarmerHeaderAdapte
                 .inflate(R.layout.farmer_header_list, viewGroup, false);
 
 
-        return new MyViewHolder(view);
+        return new MyViewHolder(view, clickListener);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final MyViewHolder myViewHolder, int i) {
+    public void onBindViewHolder(@NonNull final MyViewHolder myViewHolder, final int i) {
         myViewHolder.bike_name.setText(bike_name[i]);
 
         myViewHolder.image.setImageResource(images[i]);
-        myViewHolder.bike_name.setOnClickListener(new View.OnClickListener() {
+        /*myViewHolder.bike_name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* Intent in = new Intent(context, BikeBookListActivity.class);
-               context.startActivity(in);*/
+                *//*Intent in = new Intent(context, VFProfileActivity.class);
+               context.startActivity(in);*//*
+
             }
-        });
+        });*/
 
     }
 
     @Override
     public int getItemCount() {
-        return bike_name.length;
+        return images.length;
     }
 
     /*@Override
     public int getCount() {
-        return  bike_name.length;
+        return  grid_name.length;
     }
 
     @Override
@@ -83,12 +93,25 @@ public class FarmerHeaderAdapter extends RecyclerView.Adapter<FarmerHeaderAdapte
         ImageView image;
         int sum;
 
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull final View itemView, final ClickListener clickListener) {
             super(itemView);
 
             bike_name = itemView.findViewById(R.id.bike_image);
             image = itemView.findViewById(R.id.image);
 
+            image.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    clickListener.itemClick(v, getAdapterPosition());
+                }
+            });
+
+            bike_name.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    clickListener.itemClick(v, getAdapterPosition());
+                }
+            });
         }
     }
 }

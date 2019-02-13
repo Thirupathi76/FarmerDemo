@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="main_grid_image">
+        <item>@drawable/screenshot_1</item>
+        <item>@drawable/screenshot_2</item>
+        <item>@drawable/screenshot_3</item>
+        <item>@drawable/screenshot_4</item>
+        <item>@drawable/screenshot_5</item>
+        <item>@drawable/screenshot_6</item>
+        <item>@drawable/screenshot_7</item>
+        <item>@drawable/screenshot_8</item>
+        <item>@drawable/screenshot_9</item>
+        <item>@drawable/screenshot_2</item>
+        <item>@drawable/screenshot_1</item>
+    </integer-array>
+
+    <integer-array name="farmer_grid_image">
+        <item>@drawable/screenshot_1</item>
+        <item>@drawable/screenshot_2</item>
+        <item>@drawable/screenshot_3</item>
+        <item>@drawable/screenshot_4</item>
+        <item>@drawable/screenshot_5</item>
+        <item>@drawable/screenshot_6</item>
+        <item>@drawable/screenshot_7</item>
+        <item>@drawable/screenshot_8</item>
+        <item>@drawable/screenshot_9</item>
+        <item>@drawable/screenshot_2</item>
+        <item>@drawable/screenshot_1</item>
+    </integer-array>
+
+    <integer-array name="vf_grid_image">
+        <item>@drawable/screenshot_1</item>
+        <item>@drawable/screenshot_2</item>
+        <item>@drawable/screenshot_3</item>
+        <item>@drawable/screenshot_4</item>
+        <item>@drawable/screenshot_5</item>
+        <item>@drawable/screenshot_6</item>
+        <item>@drawable/screenshot_7</item>
+        <item>@drawable/screenshot_8</item>
+        <item>@drawable/screenshot_9</item>
+        <item>@drawable/screenshot_2</item>
+        <item>@drawable/screenshot_1</item>
+    </integer-array>
+
+    <integer-array name="supplier_grid_image">
+        <item>@drawable/screenshot_1</item>
+        <item>@drawable/screenshot_2</item>
+        <item>@drawable/screenshot_3</item>
+        <item>@drawable/screenshot_4</item>
+    </integer-array>
+
+    <integer-array name="merchant_grid_image">
+        <item>@drawable/screenshot_1</item>
+        <item>@drawable/screenshot_2</item>
+        <item>@drawable/screenshot_3</item>
+        <item>@drawable/screenshot_4</item>
+    </integer-array>
+
+    <integer-array name="logistic_grid_image">
+        <item>@drawable/screenshot_1</item>
+        <item>@drawable/screenshot_2</item>
+        <item>@drawable/screenshot_3</item>
+    </integer-array>
+
+    <integer-array name="warehouse_grid_image">
+        <item>@drawable/screenshot_1</item>
+        <item>@drawable/screenshot_2</item>
+        <item>@drawable/screenshot_3</item>
+    </integer-array>
+</resources>

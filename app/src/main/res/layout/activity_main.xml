@@ -15,10 +15,20 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <com.demo.farmerdemo.views.TextViewHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Registration"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
         <Button
             android:id="@+id/farmer"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:background="@drawable/rounded_corner_button"
             android:textStyle="normal"
             android:textSize="16sp"
@@ -29,7 +39,7 @@
         <Button
             android:id="@+id/vfarmer"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:background="@drawable/rounded_corner_button"
             android:textStyle="normal"
             android:textSize="16sp"
@@ -40,13 +50,56 @@
         <Button
             android:id="@+id/worker"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:background="@drawable/rounded_corner_button"
             android:textStyle="normal"
             android:textSize="16sp"
             android:layout_marginTop="18dp"
             android:textColor="@color/white"
             android:text="Workers"/>
+
+        <Button
+            android:id="@+id/supplier"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_corner_button"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:text="Supplier"/>
+
+        <Button
+            android:id="@+id/merchant"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_corner_button"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:text="Merchant"/>
+        <Button
+            android:id="@+id/logistic"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_corner_button"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:text="Logistic"/>
+
+        <Button
+            android:id="@+id/warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_corner_button"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:text="WareHouse"/>
     </LinearLayout>
 
 </LinearLayout>

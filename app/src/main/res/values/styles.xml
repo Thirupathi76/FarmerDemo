@@ -9,17 +9,53 @@
         <item name="windowActionModeOverlay">true</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
 
     </style>
 
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        &lt;!&ndash; Main theme colors &ndash;&gt;
+        &lt;!&ndash;   your app branding color for the app bar &ndash;&gt;
+        <item name="colorPrimary">@color/primary_color</item>
+        &lt;!&ndash;   darker variant for the status bar and contextual app bars &ndash;&gt;
+        <item name="colorPrimaryDark">@color/dark_primary_color</item>
+        &lt;!&ndash;   theme UI controls like checkboxes and text fields &ndash;&gt;
+        <item name="colorAccent">@color/accent_color</item>
+
+        <item name="android:windowBackground">@color/primary_color</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/iron</item>
+
+        <item name="colorButtonNormal">@color/dark_primary_color</item>
+
+    </style>-->
+
+    <style name = "NoActionBar" parent = "@style/AppTheme">
+        <item name = "android:windowActionBar">false</item>
+        <item name = "android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
     <style name="TextSignUp" parent="TextAppearance.AppCompat">
         <!-- Hint color and label color in FALSE state -->
         <item name="android:textColorHint">@android:color/darker_gray</item>
         <item name="android:textSize">20sp</item>
         <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
-        <item name="colorAccent">@color/green_500</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlNormal">@android:color/darker_gray</item>
-        <item name="colorControlActivated">@color/green_500</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
     </style>
 
     <style name="TextLogIn" parent="TextAppearance.AppCompat">
@@ -60,14 +96,9 @@
 
 
     <style name="EditTextStyle" parent="MatchWrap">
-        <item name="android:background">@drawable/field_bg</item>
         <item name="android:textColor">@color/colorPrimaryText</item>
         <item name="android:cacheColorHint">@color/colorSecondaryText</item>
-        <item name="android:textSize">@dimen/dimen_16</item>
-        <item name="android:layout_marginLeft">@dimen/dimen10</item>
-        <item name="android:layout_marginRight">@dimen/dimen10</item>
-        <item name="android:layout_marginTop">@dimen/dimen_5</item>
-        <item name="android:layout_marginBottom">@dimen/dimen_5</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:singleLine">true</item>
         <item name="android:maxLength">50</item>
         <item name="android:longClickable">false</item>
@@ -97,4 +128,29 @@
         <item name="android:singleLine">true</item>
     </style>
 
+
+    <style name="Widget" />
+
+    <style name="Widget.TextInputLayout">
+        <item name="android:layout_height">@dimen/wrap_content</item>
+        <item name="android:layout_width">@dimen/input_width</item>
+        <item name="android:textColorHint">@color/color_input_hint</item>
+    </style>
+
+    <style name="Widget.TextEdit">
+        <item name="android:layout_height">@dimen/match_parent</item>
+        <item name="android:layout_width">@dimen/match_parent</item>
+        <item name="android:textColorHighlight">@color/color_text_highlight</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorHint">@color/color_input_hint</item>
+        <item name="android:background">@drawable/state</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:padding">@dimen/text_padding</item>
+    </style>
+
+    <style name="Widget.Hint">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

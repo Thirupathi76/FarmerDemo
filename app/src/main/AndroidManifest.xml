@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.demo.farmerdemo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,21 +12,49 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity
+            android:name=".slide_login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginActivity">
+
         </activity>
-        <activity android:name=".LoginActivity" />
         <activity android:name=".FarmerSignUp" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".NavProfileActivity"
-            android:label="@string/title_activity_nav_profile"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".WorkerSignUp" />
+        <activity android:name=".VFarmerSignUp" />
+        <activity android:name=".WareHouseRegistration" />
+        <activity android:name=".LogisticRegistration" />
+        <activity android:name=".MerchantRegistration" />
+        <activity android:name=".SupplierRegistration" />
+        <activity android:name=".VFProfileActivity" />
+        <activity android:name=".FarmerListActivity" />
+        <activity android:name=".Chat_Room" />
+        <activity android:name=".PesticidesActivity" />
+        <activity android:name=".FarmerListNewActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".LogisticTabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ToolsActivity" />
+        <activity android:name=".PlayIntroVideo">
+
+        </activity>
+        <activity android:name=".LanguageSelectionActivity"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".WorkerSignUp"/>
-        <activity android:name=".VFarmerSignUp"/>
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

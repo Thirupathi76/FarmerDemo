@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:background="#00796B"
+    android:background="@color/colorPrimary"
     tools:context=".SplashScreen">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gif_green"
+        android:scaleType="fitXY"/>
+
     <com.demo.farmerdemo.views.TextViewHeader
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="28sp"
+        android:gravity="center"
         android:text="Farmer"
         android:textColor="@color/white"
-        android:layout_margin="28sp"
-        android:textSize="34sp" />
-</LinearLayout>
+        android:textStyle="bold"
+        android:textSize="34sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_8"
+        android:background="@drawable/round_corner_stroke"
+        android:padding="@dimen/dimen_8">
+
+        <com.demo.farmerdemo.views.TextViewHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_4"
+            android:gravity="center"
+            android:text="Powered by PBR technologies"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

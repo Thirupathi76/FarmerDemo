@@ -5,32 +5,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="2dp">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:id="@+id/image_layout"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/image"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
             android:src="@drawable/ic_star_border_black_24dp"/>
         <TextView
             android:id="@+id/bike_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="normal"
-            android:textSize="13sp"
+            android:textSize="11sp"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:layout_marginTop="4dp"
-            android:textColor="@color/white"
-            android:text="VF List"/>
+            android:textColor="@color/text_color_orange"
+            android:text="VF Listfsdfsdfasdsdfasdf"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6856 "
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_color_orange"
+            android:layout_gravity="center"
+            android:gravity="center"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+
+            android:text="users interesting"
+            android:textColor="@color/text_color_orange"
+            android:textSize="9sp"/>
     </LinearLayout>
 
 </RelativeLayout>

@@ -15,53 +15,25 @@ import com.demo.farmerdemo.R;
 
 public class FarmerItemAdapter extends BaseAdapter {
 
-    String[] bike_name = {"Logistics", "info","Market","Supplier","Govt","Authority","Advisory","Orders"};
+    String[] grid_name;
     Context context;
     String type;
-    int[] images = {R.drawable.screenshot_2,R.drawable.screenshot_3,R.drawable.screenshot_5,R.drawable.screenshot_6,
-            R.drawable.screenshot_7,R.drawable.screenshot_8,R.drawable.screenshot_2,R.drawable.screenshot_3};
+    int[] grid_images;
 
-    public FarmerItemAdapter(Context productActivity, String type) {
+    public FarmerItemAdapter(Context productActivity, String[] grid_name, int[] grid_images) {
+        this.grid_name = grid_name;
+        this.grid_images = grid_images;
         context = productActivity;
         this.type = type;
-    }
-
-    /*@NonNull
-    @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.farmer_items_list, viewGroup, false);
-
-
-        return new MyViewHolder(view);
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull final MyViewHolder myViewHolder, int i) {
-        myViewHolder.bike_name.setText(bike_name[i]);
-
-        myViewHolder.bike_name.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                *//*Intent in = new Intent(context, BikeBookListActivity.class);
-               context.startActivity(in);*//*
-            }
-        });
 
     }
-
-    @Override
-    public int getItemCount() {
-        return bike_name.length;
-    }*/
 
     @Override
     public int getCount() {
-        return  bike_name.length;
+        return  grid_name.length;
     }
 
     @Override
-
     public Object getItem(int position) {
         return null;
     }
@@ -75,9 +47,9 @@ public class FarmerItemAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = LayoutInflater.from(context).inflate(R.layout.farmer_items_list, null);
         TextView textView = view.findViewById(R.id.bike_image);
-        textView.setText(bike_name[position]);
+        textView.setText(grid_name[position]);
         ImageView image = view.findViewById(R.id.image);
-        image.setImageResource(images[position]);
+        image.setImageResource(grid_images[position]);
 
         return view;
     }
@@ -92,7 +64,34 @@ public class FarmerItemAdapter extends BaseAdapter {
 
             bike_name = itemView.findViewById(R.id.bike_image);
 
-
         }
     }
 }
+   /*@NonNull
+    @Override
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        View view = LayoutInflater.from(viewGroup.getContext())
+                .inflate(R.layout.farmer_items_list, viewGroup, false);
+
+
+        return new MyViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull final MyViewHolder myViewHolder, int i) {
+        myViewHolder.grid_name.setText(grid_name[i]);
+
+        myViewHolder.grid_name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                *//*Intent in = new Intent(context, BikeBookListActivity.class);
+               context.startActivity(in);*//*
+            }
+        });
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return grid_name.length;
+    }*/
