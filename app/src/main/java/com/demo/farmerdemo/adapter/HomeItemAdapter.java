@@ -11,10 +11,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.demo.farmerdemo.AdvisoryTabActivity;
 import com.demo.farmerdemo.FarmerListActivity;
 import com.demo.farmerdemo.LogisticTabActivity;
 import com.demo.farmerdemo.R;
 import com.demo.farmerdemo.interfaces.ClickListener;
+import com.demo.farmerdemo.product.ProductNavActivity;
 
 
 public class HomeItemAdapter extends RecyclerView.Adapter<HomeItemAdapter.MyViewHolder> {
@@ -61,10 +63,14 @@ public class HomeItemAdapter extends RecyclerView.Adapter<HomeItemAdapter.MyView
         myViewHolder.image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (i%2 == 0) {
+                if (i == 0) {
                     Intent in = new Intent(context, FarmerListActivity.class);
                     context.startActivity(in);
-                } else {
+                } else if (i == 1){
+                    context.startActivity(new Intent(context, ProductNavActivity.class));
+                } else if (i==2){
+                    context.startActivity(new Intent(context, AdvisoryTabActivity.class));
+                } else if (i==3){
                     context.startActivity(new Intent(context, LogisticTabActivity.class));
                 }
             }

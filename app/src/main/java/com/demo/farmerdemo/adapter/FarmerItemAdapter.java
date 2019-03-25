@@ -20,6 +20,7 @@ public class FarmerItemAdapter extends BaseAdapter {
     String type;
     int[] grid_images;
 
+
     public FarmerItemAdapter(Context productActivity, String[] grid_name, int[] grid_images) {
         this.grid_name = grid_name;
         this.grid_images = grid_images;

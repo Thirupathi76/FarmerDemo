@@ -20,7 +20,7 @@ import com.demo.farmerdemo.views.ExpandableHeightGridView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class FarmerFragment extends Fragment  {
+public class FarmerFragment extends Fragment {
 
     ExpandableHeightGridView grid_categories;
     FarmerItemAdapter adapter;
@@ -47,9 +47,9 @@ public class FarmerFragment extends Fragment  {
         homeBannerPagerIndicator = (LinearLayout) view.findViewById(R.id.home_banner_pager_indicator);*/
 
         String[] grid_names = getResources().getStringArray(R.array.farmer_grid);
-        int[] grid_images = {R.drawable.screenshot_3, R.drawable.screenshot_4,  R.drawable.screenshot_1,  R.drawable.screenshot_2,
-                R.drawable.screenshot_5, R.drawable.screenshot_6,  R.drawable.screenshot_7,  R.drawable.screenshot_8,
-                R.drawable.screenshot_9, R.drawable.screenshot_1,  R.drawable.screenshot_2, R.drawable.screenshot_7};
+        int[] grid_images = {R.drawable.screenshot_3, R.drawable.screenshot_4, R.drawable.screenshot_1, R.drawable.screenshot_2,
+                R.drawable.screenshot_5, R.drawable.screenshot_6, R.drawable.screenshot_7, R.drawable.screenshot_8,
+                R.drawable.screenshot_9, R.drawable.screenshot_1, R.drawable.screenshot_2, R.drawable.screenshot_7};
 
         adapter = new FarmerItemAdapter(getActivity(), grid_names, grid_images);
         grid_categories.setAdapter(adapter);
@@ -66,15 +66,18 @@ public class FarmerFragment extends Fragment  {
 //                    startActivity(new Intent(getActivity(), NavProfileActivity.class));
                     getFragmentManager().beginTransaction().replace(R.id.frame_layout, new VirtualFarmerFragment()).commit();
 
-                }if (position == 2) {
+                }
+                if (position == 2) {
 //                    startActivity(new Intent(getActivity(), NavProfileActivity.class));
                     getFragmentManager().beginTransaction().replace(R.id.frame_layout, new SupplierFragment()).commit();
 
-                }if (position == 4) {
+                }
+                if (position == 4) {
 //                    startActivity(new Intent(getActivity(), NavProfileActivity.class));
                     getFragmentManager().beginTransaction().replace(R.id.frame_layout, new PortfolioManagerFragment()).commit();
 
-                }if (position == 5) {
+                }
+                if (position == 5) {
 //                    startActivity(new Intent(getActivity(), NavProfileActivity.class));
                     getFragmentManager().beginTransaction().replace(R.id.frame_layout, new SupplierFragment()).commit();
 
@@ -179,7 +182,6 @@ public class FarmerFragment extends Fragment  {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
 
 
     }

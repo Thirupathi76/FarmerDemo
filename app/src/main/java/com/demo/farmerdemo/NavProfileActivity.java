@@ -1,5 +1,7 @@
 package com.demo.farmerdemo;
 
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -22,6 +24,7 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewAnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -95,8 +98,14 @@ public class NavProfileActivity extends AppCompatActivity
 
                     fab.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), android.R.drawable.ic_menu_close_clear_cancel));
                     flag = false;
+
                     overlay_layout.setVisibility(View.VISIBLE);
-                }else if(!flag){
+                    ObjectAnimator anim = ObjectAnimator.ofFloat(rv_list_overlay_items, "x", 0f, 1f);
+                    anim.setDuration(1000);
+                    anim.start();
+
+
+                } else {
 
                     fab.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), android.R.drawable.ic_menu_help));
                     flag = true;
@@ -139,7 +148,7 @@ public class NavProfileActivity extends AppCompatActivity
         recycler_header.setLayoutManager(new LinearLayoutManager(this,
                 LinearLayoutManager.HORIZONTAL, false));
 
-        headerAdapter = new FarmerHeaderAdapter(this, "", new ClickListener() {
+        headerAdapter = new FarmerHeaderAdapter(this, "", new ClickListener(){
             @Override
             public void itemClick(View view, int pos) {
                 if (pos == 1) {
@@ -169,7 +178,6 @@ public class NavProfileActivity extends AppCompatActivity
                 } if (pos == 6) {
                     startActivity(new Intent(NavProfileActivity.this, FarmerListActivity.class));
 //                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new WarehouseFragment()).commit();
-
                 }
                
             }

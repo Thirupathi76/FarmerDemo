@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="4dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/bottom_cart_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:background="#006efd"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/cart_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Apply"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonPanel"
+        tools:listitem="@layout/prod_list_item_layout"
+        android:layout_alignParentTop="true"
+        android:id="@+id/recycler">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>

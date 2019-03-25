@@ -1,8 +1,6 @@
 package com.demo.farmerdemo.bean;
 
-/**
- * Created by welcome on 2/2/2018.
- */
+
 
 public class ChatBean {
 

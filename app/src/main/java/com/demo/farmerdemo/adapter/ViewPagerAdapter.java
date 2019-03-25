@@ -12,7 +12,6 @@ import android.widget.Toast;
 import com.demo.farmerdemo.R;
 import com.squareup.picasso.Picasso;
 
-
 public class ViewPagerAdapter extends PagerAdapter {
 
     private Context context;

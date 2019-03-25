@@ -47,7 +47,7 @@
 
         </activity>
         <activity android:name=".LanguageSelectionActivity"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppThemeLanguage"/>
         <activity android:name=".IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,6 +55,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AdvisoryTabActivity" />
+        <activity android:name=".product.ProductNavActivity" />
+        <activity android:name=".product.CartActivity" />
+        <activity android:name=".product.PaymentActivity" />
+        <activity android:name=".product.ProductItemDetailActivity" />
+        <activity android:name=".product.ProductItemListActivity" />
     </application>
 
 </manifest>

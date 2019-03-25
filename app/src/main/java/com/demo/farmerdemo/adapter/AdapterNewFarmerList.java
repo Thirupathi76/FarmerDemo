@@ -21,7 +21,7 @@ public class AdapterNewFarmerList extends RecyclerView.Adapter<AdapterNewFarmerL
     Integer[] images1;
 
     public AdapterNewFarmerList(Context mainActivity, Integer[] images, String[] arr, String[] arr1, String[] arr2, String[] arr3, Integer[] images1) {
-        context = mainActivity;
+        this.context = mainActivity;
         this.images = images;
         this.arr = arr;
         this.arr1 = arr1;
@@ -71,7 +71,6 @@ public class AdapterNewFarmerList extends RecyclerView.Adapter<AdapterNewFarmerL
             managername = itemView.findViewById(R.id.min);
             mobile = itemView.findViewById(R.id.max);
             images1 = itemView.findViewById(R.id.view);
-
         }
     }
 }

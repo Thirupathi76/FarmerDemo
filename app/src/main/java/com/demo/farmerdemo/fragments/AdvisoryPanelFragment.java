@@ -101,8 +101,6 @@ public class AdvisoryPanelFragment extends Fragment  {
 
         getActivity().setTitle("Advisory Panel");
         return view;
-
-
     }
 
     private void setUpSlider() {

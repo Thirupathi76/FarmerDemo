@@ -31,7 +31,7 @@ public class PlayIntroVideo extends YouTubeBaseActivity implements
 
         setContentView(R.layout.activity_play_intro_video);
 
-        youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
+        youTubeView = findViewById(R.id.youtube_view);
 
         // Initializing video player with developer key
         youTubeView.initialize(ConfigApp.DEVELOPER_KEY, this);
@@ -66,7 +66,8 @@ public class PlayIntroVideo extends YouTubeBaseActivity implements
             player.loadVideo(ConfigApp.YOUTUBE_VIDEO_CODE);
 
             // Hiding player controls
-            player.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
+            player.setPlayerStyle(YouTubePlayer.PlayerStyle.MINIMAL);
+            player.pause();
             player.setShowFullscreenButton(true);
 
         }

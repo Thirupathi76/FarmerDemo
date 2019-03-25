@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProductItemDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tata Salt, 1Kg"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:rating="4"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(1,6926)"
+                android:layout_marginTop="12dp"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/indicator"
+                android:layout_below="@+id/pager"
+                android:layout_gravity="center">
+            </me.relex.circleindicator.CircleIndicator>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textSize="16dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs 18"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp"
+                android:textColor="#FB7373"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In Stock"
+            android:textSize="16dp"
+            android:textColor="#85EE5B"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#EEDA5B"
+            android:text="Add to Cart"
+            android:drawableLeft="@drawable/cart" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#AFADA3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your order will be delivered to 500011 Hyderabad"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Example: 500001"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/textinputborder"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="#EEDA5B"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Share"
+            android:drawableLeft="@drawable/share"/>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About this item"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vacuum evaporated iodised salt,Iodine hepls in mental development of children and prevents iodine deficiency disorders in adults."
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer Reviews"
+            android:textSize="20dp"
+            android:layout_margin="15dp"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="customer reviews"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar1"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        android:rating="4"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4 out of 5 star"
+                        android:layout_marginTop="12dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADA3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar2"
+                            style="?android:attr/ratingBarStyleIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:max="5"
+                            android:rating="4"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:transformPivotX="0dp"
+                            android:transformPivotY="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Overall Good"
+                            android:layout_marginTop="12dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="By Mon on 23 November 2016"
+                        android:layout_marginLeft="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. the point of using Lorem Ipsum is that it has a more or less normal."
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADA3"/>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar3"
+                            style="?android:attr/ratingBarStyleIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:max="5"
+                            android:rating="4"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:transformPivotX="0dp"
+                            android:transformPivotY="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Overall Good"
+                            android:layout_marginTop="12dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="By Mon on 23 November 2016"
+                        android:layout_marginLeft="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. the point of using Lorem Ipsum is that it has a more or less normal."
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
