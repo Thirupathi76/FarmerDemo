@@ -1,6 +1,5 @@
 package com.demo.farmerdemo.appapi;
 
-
 import com.demo.farmerdemo.response.LoginResponse;
 import com.demo.farmerdemo.response.SignupResponse;
 
@@ -8,7 +7,6 @@ import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
-
 
 public interface AppService {
 
